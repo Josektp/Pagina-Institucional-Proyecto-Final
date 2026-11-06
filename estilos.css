@@ -1,0 +1,204 @@
+
+/* CONFIGURACION GENERAL */
+body {
+    font-family: Arial, sans-serif;
+    color: #263746;
+    background-color: #f1f5f8;
+    margin: 0;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #173c5a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.escudo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.titulo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.titulo h1 {
+    margin: 5px;
+}
+
+.titulo p {
+    margin: 5px;
+}
+
+/* MENU DE NAVEGACION */
+nav {
+    background-color: #245b7d;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 95%;
+    margin: 20px auto;
+}
+
+/* COLUMNA LATERAL */
+aside {
+    background-color: white;
+    border: 1px solid #b7c9d5;
+    width: 20%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* CONTENIDO CENTRAL */
+main {
+    background-color: white;
+    border: 1px solid #b7c9d5;
+    width: 68%;
+    padding: 10px;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* CARRUSEL */
+.area-carrusel {
+    width: 100%;
+    text-align: center;
+}
+
+.area-carrusel input {
+    display: none;
+}
+
+.carrusel {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.fotos {
+    width: 300%;
+    height: 280px;
+    font-size: 0;
+    transition: transform 0.5s;
+}
+
+.fotos img {
+    width: 33.333%;
+    height: 280px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+/* MOVIMIENTO DEL CARRUSEL */
+#foto1:checked ~ .carrusel .fotos {
+    transform: translateX(0);
+}
+
+#foto2:checked ~ .carrusel .fotos {
+    transform: translateX(-33.333%);
+}
+
+#foto3:checked ~ .carrusel .fotos {
+    transform: translateX(-66.666%);
+}
+
+/* CONTROLES DEL CARRUSEL */
+.controles {
+    padding: 10px;
+}
+
+.controles label {
+    background-color: #245b7d;
+    color: white;
+    padding: 8px 13px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* SECCIONES */
+.seccion {
+    background-color: #f7fafc;
+    border: 1px solid #c5d5df;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.seccion h2 {
+    color: #173c5a;
+    text-align: center;
+}
+
+/* TARJETAS DE OFERTA ACADEMICA */
+.tarjeta {
+    background-color: #e4eff5;
+    border: 1px solid #a9c1d0;
+    width: 43%;
+    padding: 10px;
+    margin: 1%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* IMAGENES DE OFERTA ACADEMICA */
+.tarjeta img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.tarjeta h3 {
+    color: #173c5a;
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #173c5a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.derechos {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+/* CODIGO QR DE GOOGLE MAPS */
+.codigo-qr {
+    width: 150px;
+    height: 150px;
+}
